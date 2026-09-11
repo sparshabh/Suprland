@@ -3,7 +3,7 @@
 </p>
 
 <h1 align=center>
-  <img src=https://readme-typing-svg.demolab.com?font=JetbrainsMono+Nerd+Font&weight=600&size=50&duration=1500&pause=2500&center=true&vCenter=true&width=435&lines=Suprland width=800>
+  <img src=https://readme-typing-svg.demolab.com?font=JetbrainsMono+Nerd+Font&weight=600&size=50&duration=1500&pause=2500&center=true&vCenter=true&width=435&lines=Suprland width=600>
 </h1>
 
 <p align=center>
@@ -13,6 +13,9 @@
 <div align="center">
 <br>
   <a href="#installation-"><kbd> <br> Installation <br> </kbd></a>&ensp;&ensp;
-  <a href="#keybinds"> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
+  <a href="#Keybinds"><kbd> <br> Keybinds <br> </kbd></a>&ensp;&ensp;
   <a href="https://discord.gg/RZJgC7KAKm"><kbd> <br> Discord <br> </kbd></a>
 </div><br>
+</br>
+</div>
+
