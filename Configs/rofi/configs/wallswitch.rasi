@@ -1,0 +1,130 @@
+@theme "~/.config/rofi/colors.rasi"
+
+configuration {
+    modi: "drun";
+    font: "JetBrains Mono Nerd Font 12";
+    show-icons: true;
+    drun-display-format: "{name}";
+    hover-select: true;
+    me-select-entry: "MouseSecondary";
+    me-accept-entry: "MousePrimary";
+    dpi: 1;
+}
+
+window {
+    enabled: true;
+    fullscreen: false;
+    transparency: "real";
+    cursor: "default";
+    spacing: 0px;
+    border-radius: 14px;
+    location: center;
+    anchor: center;
+    width: 75%;
+    height: 75%;
+    background-color: @surface-container-lowest;
+    border: 1px;
+    border-color: @primary;
+}
+
+mainbox {
+    enabled: true;
+    children: [ "inputbar", "listview" ];
+    background-color: transparent;
+}
+
+inputbar {
+    enabled: true;
+    children: [ "entry" ];
+    text-color: @on-surface;
+    background-color: @surface-container-lowest;
+    padding: 8px 16px;
+    margin: 14px;
+    border-radius: 10px;
+}
+
+entry {
+    enabled: true;
+    text-color: @on-surface;
+    background-color: @surface-container-lowest;
+    placeholder: "Search wallpapers...";
+    placeholder-color: @on-surface-variant;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+listview {
+    enabled: true;
+    columns: 5;
+    lines: 1;
+    padding: 26px 36px;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    reverse: false;
+    fixed-height: true;
+    fixed-columns: true;
+    background-color: transparent;
+    spacing: 20px;
+    border: 0px;
+}
+
+element {
+    enabled: true;
+    orientation: vertical;
+    children: [ element-icon, element-text ];
+    expand: false;
+    spacing: 8px;
+    padding: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: @surface-container-low;
+}
+
+element-icon {
+    size: 560px;
+    expand: false;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
+
+element-text {
+    cursor: inherit;
+    background-color: transparent;
+    text-color: inherit;
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    padding: 8px 0px 10px 0px;
+}
+
+element normal.normal {
+    background-color: @surface-container-low;
+    text-color: @on-surface;
+}
+
+element normal.urgent,
+element normal.active {
+    background-color: @surface-container-low;
+    text-color: @on-surface;
+}
+
+element selected.normal {
+    background-color: @primary;
+    text-color: @surface;
+    border: 2px;
+    border-color: @primary;
+}
+
+element alternate.normal {
+    background-color: @surface-container-low;
+    text-color: @on-surface;
+}
+
+element alternate.urgent,
+element alternate.active {
+    background-color: @surface-container-low;
+    text-color: @on-surface;
+}
+

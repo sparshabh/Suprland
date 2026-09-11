@@ -1,0 +1,257 @@
+@import url("colors.css");
+
+* {
+  background-color: transparent;
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+window#waybar {
+  background-color: alpha(@surface, 0.95);
+  padding: 4px 0;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+}
+
+
+/* ╭──────────────────────╮
+   │       TOP PILL       │
+   ╰──────────────────────╯ */
+
+#custom-os_button,
+#custom-wallswitch,
+#custom-gamemode,
+#custom-emoji,
+#custom-clipboard {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+
+  margin: 0;
+  padding: 5px 3px;
+}
+
+
+/* Top pill first module */
+
+#custom-os_button {
+  margin: 4px 5px 0 5px;
+  padding-top: 7px;
+
+  border-radius: 10px 10px 0 0;
+}
+
+
+/* Top pill middle modules */
+
+#custom-wallswitch,
+#custom-gamemode,
+#custom-emoji {
+  margin: 0 5px;
+
+  border-radius: 0;
+}
+
+
+/* Top pill last module */
+
+#custom-clipboard {
+  margin: 0 5px 4px 5px;
+  padding-bottom: 7px;
+
+  border-radius: 0 0 10px 10px;
+}
+
+
+/* ╭──────────────────────╮
+   │        CENTER        │
+   ╰──────────────────────╯ */
+
+
+/* Weather */
+
+#custom-weather {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+
+  margin: 3px 5px;
+  padding: 5px 3px;
+
+  border-radius: 10px;
+}
+
+
+/* Clock */
+
+#clock {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+
+  margin: 3px 5px;
+  padding: 4px 3px;
+
+  border-radius: 10px;
+}
+
+/* ╭──────────────────────╮
+   │      WORKSPACES      │
+   ╰──────────────────────╯ */
+
+#workspaces {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+
+  padding: 4px;
+  margin: 3px 5px;
+
+  border-radius: 10px;
+
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1px;
+
+  opacity: 1;
+}
+
+
+/* Workspace buttons */
+
+#workspaces button {
+  padding: 0;
+  margin: 2px;
+
+  min-width: 30px;
+  min-height: 5px;
+
+  border-radius: 6px;
+
+  color: @on_surface_variant;
+  background-color: @surface_container;
+
+  font-size: 1px;
+  opacity: 0.5;
+
+  transition-property: background-color, opacity, min-height;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+
+/* Hover */
+
+#workspaces button:hover {
+  background-color: @surface_container_high;
+
+  opacity: 0.8;
+
+  min-height: 40px;
+
+  border-radius: 6px;
+}
+
+
+/* Active */
+
+#workspaces button.active {
+  padding: 0;
+  margin: 2px;
+
+  min-width: 30px;
+  min-height: 40px;
+
+  border-radius: 6px;
+
+  background-color: @primary;
+  color: @on_primary;
+
+  opacity: 1;
+}
+
+/* ╭──────────────────────╮
+   │         TRAY         │
+   ╰──────────────────────╯ */
+
+#tray {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+  padding: 5px 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin: 8px 5px;
+  border-radius: 10px;
+}
+
+
+/* ╭──────────────────────╮
+   │      BOTTOM PILL     │
+   ╰──────────────────────╯ */
+
+
+/* Bottom pill first module */
+
+#idle_inhibitor {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+
+  padding: 7px 3px 5px 3px;
+  margin: 4px 5px 0 5px;
+
+  border-radius: 10px 10px 0 0;
+}
+
+
+/* Bottom pill middle modules */
+
+#power-profiles-daemon,
+#bluetooth,
+#pulseaudio,
+#network,
+#custom-lock {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+
+  padding: 5px 3px;
+  margin: 0 5px;
+
+  border-radius: 0;
+}
+
+
+/* Bottom pill last module */
+
+#custom-power {
+  color: @primary;
+  background-color: alpha(@surface_container_high, 0.7);
+
+  padding: 5px 3px 7px 3px;
+  margin: 0 5px 4px 5px;
+
+  border-radius: 0 0 10px 10px;
+}
+
+
+/* ╭──────────────────────╮
+   │       TOOLTIPS       │
+   ╰──────────────────────╯ */
+
+tooltip {
+  background-color: alpha(@surface_container, 0.95);
+  color: @on_surface;
+
+  border: 1px solid @outline;
+  border-radius: 8px;
+
+  padding: 5px 8px;
+}
+
+tooltip label {
+  color: @on_surface;
+
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 13px;
+  font-weight: bold;
+}

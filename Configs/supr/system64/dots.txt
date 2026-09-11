@@ -1,0 +1,3 @@
+Name='Suprland'
+Description="an opinionated Hyprland ricing setup"
+version='BETA'

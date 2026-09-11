@@ -1,0 +1,44 @@
+System64 — detailed report
+Generated: 2026-08-09 10:03:20
+
+== OS ==
+  Distro             Arch Linux
+  Kernel             7.1.6-arch1-1
+  Architecture       x86_64
+  Init system        systemd
+  Uptime             up 41 minutes
+  Locale             en_US.UTF-8
+
+== CPU ==
+  Model              AMD Ryzen 5 5600G with Radeon Graphics
+  Cores              12
+  Threads            12
+  Load avg           0.58 0.84 0.95
+  Temp               +39.9°C 
+
+== GPU ==
+  Model              NVIDIA Corporation GF108 [GeForce GT 730] (rev a1)
+  Driver             nouveau
+
+== Memory ==
+  RAM                2.2G / 6.1G
+  Swap               0B / 3.0G
+
+== Storage ==
+  Root (/)           38G / 219G (19% used)
+
+== Display ==
+  Session type       unknown
+  WM / DE            Hyprland
+  Hyprland ver       Hyprland 0.56.2 built from branch v0.56.2 at commit efb50993780079460b0cbed1363e2166a2de1d9f clean ([gha] Nix: update inputs).
+  Resolution         1920x1080
+  Monitors           1
+
+== Shell & Terminal ==
+  Shell              zsh
+  Terminal           xterm-256color
+
+== Packages ==
+  Official           975
+  AUR/foreign        6
+

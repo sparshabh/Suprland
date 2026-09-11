@@ -1,0 +1,26 @@
+[Default Applications]
+text/html=zen.desktop
+x-scheme-handler/http=zen.desktop
+x-scheme-handler/https=zen.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+application/x-zerosize=userapp-kitty -e nvim %f-ZMPCT3.desktop
+text/x-lua=userapp-kitty -e nvim %f\n-5CZUS3.desktop
+image/png=org.gnome.Loupe.desktop
+x-scheme-handler/chrome=zen.desktop
+application/x-extension-htm=zen.desktop
+application/x-extension-html=zen.desktop
+application/x-extension-shtml=zen.desktop
+application/xhtml+xml=zen.desktop
+application/x-extension-xhtml=zen.desktop
+application/x-extension-xht=zen.desktop
+x-scheme-handler/discord=vesktop.desktop
+
+[Added Associations]
+application/x-zerosize=userapp-kitty -e nvim %f-ZMPCT3.desktop;nvim.desktop;
+text/x-lua=userapp-kitty -e nvim %f\n-5CZUS3.desktop;
+image/png=org.gnome.Loupe.desktop;
+text/x-shellscript=userapp-kitty -e nvim %f-ZMPCT3.desktop;
+x-scheme-handler/http=zen.desktop;
+x-scheme-handler/https=zen.desktop;
+x-scheme-handler/chrome=zen.desktop;

@@ -1,0 +1,171 @@
+{
+  "layer": "top",
+  "position": "left",
+  "width": 45,
+  "gtk-layer-shell": true,
+
+
+  "modules-left": [
+    "custom/os_button",
+    "custom/wallswitch",
+    "custom/gamemode",
+    "custom/emoji",
+    "custom/clipboard",
+    "hyprland/workspaces"
+  ],
+
+  "modules-center": [
+    "custom/weather",
+    "clock"
+  ],
+
+  "modules-right": [
+    "tray",
+    "idle_inhibitor",
+    "power-profiles-daemon",
+    "bluetooth",
+    "pulseaudio",
+    "network",
+    "custom/lock",
+    "custom/power",
+  ],
+
+   "custom/os_button": {
+        "format": "  ", 
+        "on-click": "rofi -show drun",
+        "tooltip": false
+   },
+
+   "custom/wallswitch": {
+        "format": " 󰇄 ", 
+        "on-click": "~/.config/supr/scripts/wallswitch.sh",
+        "tooltip": false
+   },
+
+   "custom/gamemode": {
+        "format": "  ", 
+        "on-click": "~/.config/supr/scripts/gamemode.sh",
+        "tooltip": false
+   },
+
+   "custom/emoji": {
+        "format": " 󰞅 ", 
+        "on-click": "~/.config/supr/scripts/emoji.sh",
+        "tooltip": false
+   },
+
+   "custom/clipboard": {
+        "format": "  ", 
+        "on-click": "~/.config/supr/scripts/clipboard.sh",
+        "tooltip": false,
+        "on-click-right": "cliphist wipe",
+   },
+
+  "clock": {
+    "format":  " \n{:%I\n%M\n──\n%p}", 
+    "tooltip": false
+  },
+
+  "custom/weather": {
+    "exec": "${HOME}/.config/waybar/scripts/get_weather.sh Nepal+Kathmandu",
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "interval": 3600
+  },
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format": "{name}",
+    "tooltip": false,
+    "persistent-workspaces": {
+        "1": [],
+        "2": [],
+        "3": [],
+        "4": [],
+        "5": []
+    }
+  },
+
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "",
+        "deactivated": ""
+    },
+    "tooltip": false
+},
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+    "show-passive-items": true
+  },
+
+"bluetooth": {
+    "format": "{icon}",
+    "format-icons": {
+        "enabled": "󰂯",
+        "disabled": "󰂲"
+    },
+    "format-connected": "󰂱",
+    "format-connected-battery": "󰂱",
+    "tooltip": true,
+    "tooltip-format": "{controller_alias}\n{num_connections} connected",
+    "on-click": "blueman-manager"
+},
+
+"power-profiles-daemon": {
+    "format": "{icon}",
+    "format-icons": {
+        "performance": "󰓅",
+        "balanced": "󰗑",
+        "power-saver": "󰌪"
+    },
+    "tooltip": true,
+    "tooltip-format": "Power profile: {profile}",
+},
+
+ "network": {
+    "format-wifi": " {icon}",
+    "format-ethernet": "󰈀",
+    "format-icons": ["󰤯 ", "󰤟 ", "󰤢 ", "󰤨 "],
+    "format-disconnected": "󰪎 ",
+    "on-click": "nm-connection-editor",
+    "interval": 3,
+    "tooltip": false
+ },
+
+"pulseaudio": {
+  "format": "{icon}",
+  "format-bluetooth": "{icon}",
+  "format-muted": "",
+  "format-icons": {
+    "headphone": "",
+    "hands-free": "",
+    "headset": "",
+    "phone": "",
+    "portable": "",
+    "car": "",
+    "default": ["", ""]
+  },
+  "on-click": "pavucontrol",
+  "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+  "tooltip": true,
+  "tooltip-format": "Volume: {volume}%"
+},
+
+  "custom/lock": {
+    "format": "  ",
+    "on-click": "hyprlock",
+    "tooltip": false
+  },
+
+  "custom/power": {
+    "format": " 󰤆 ",
+    "on-click": "wlogout -b 5",
+    "tooltip": false
+  }
+}
