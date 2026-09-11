@@ -1,3 +1,11 @@
+
+
+> [!WARNING]
+> 🚧 The installation scripts are currently under construction.
+> 
+> 🗃️ You can still copy the config files directly and set up the dotfiles manually. 👍
+
+
 <p align=center>
   <img src="https://raw.githubusercontent.com/sparshabh/Suprland/main/Assets/logo.png" width="250" />
 </p>
@@ -18,4 +26,3 @@
 </div><br>
 </br>
 </div>
-
