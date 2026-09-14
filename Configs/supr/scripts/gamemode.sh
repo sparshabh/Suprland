@@ -28,7 +28,6 @@ enable_gamemode() {
 
     # Stop desktop UI
     pkill -x waybar 2>/dev/null
-    pkill -x awww-daemon 2>/dev/null
     pkill -x matugen 2>/dev/null
     pkill -x swaync 2>/dev/null
 

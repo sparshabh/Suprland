@@ -63,9 +63,6 @@ input_path = './templates/vscode-colors.json'
 output_path = '~/.cache/matugen/vscode-colors.json'
 
 # -- Terminal Apps -- #
-[templates.btop]
-input_path = '~/.config/matugen/templates/btop.theme'
-output_path = '~/.config/btop/themes/matugen.theme'
 
 [templates.cava]
 input_path = '~/.config/matugen/templates/cava-colors.ini'

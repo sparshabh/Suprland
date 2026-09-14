@@ -16,14 +16,14 @@ awww clear 000000 \
   || log_error "awww clear failed"
 sleep 1
 
-# Colors
-matugen image ~/.cache/supr/current_wallpaper.jpg --source-color-index 0 \
-  || log_error "matugen failed to generate colors"
-
 # Set wallpaper
 awww img ~/.cache/supr/current_wallpaper.jpg --transition-type center --transition-fps 60 --transition-step 30 --transition-duration 1.5 \
   || log_error "awww img failed to set wallpaper"
 sleep 1
+
+# Colors
+matugen image ~/.cache/supr/current_wallpaper.jpg --source-color-index 0 \
+  || log_error "matugen failed to generate colors"
 
 # Bar
 ~/.config/waybar/scripts/launch.sh
